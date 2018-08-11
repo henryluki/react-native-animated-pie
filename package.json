@@ -1,0 +1,26 @@
+{
+  "name": "react-native-animated-pie",
+  "version": "0.0.1",
+  "description": "Animated Pie chart for React Native，use ART and Animated",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henryluki/react-native-animated-pie.git"
+  },
+  "dependencies": {
+    "d3-shape": "^1.2.0",
+    "react": "^16.2.0",
+    "react-native": "^0.51.0",
+    "react-native-pie": "^0.5.0"
+  },
+  "keywords": ["react", "native", "ART", "Animated", "Pie", "chart", "d3"],
+  "author": "henryluki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/henryluki/react-native-animated-pie/issues"
+  },
+  "homepage": "https://github.com/henryluki/react-native-animated-pie#readme"
+}
