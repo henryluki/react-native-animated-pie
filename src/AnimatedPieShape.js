@@ -16,7 +16,7 @@ type Props = {
   easing?: Function
 };
 
-export default class ARTPieShape extends React.PureComponent<Props> {
+export default class ARTAnimatedPieShape extends React.PureComponent<Props> {
   _animatedPaths: Array<AnimatedPath<*>>;
   _animations: Array<Object>;
   _easing: Function;

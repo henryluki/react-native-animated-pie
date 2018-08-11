@@ -5,7 +5,7 @@ import { ART } from "react-native";
 import * as d3Shape from "d3-shape";
 
 import PieShape from "./PieShape";
-import PieAnimatedShape from "./PieAnimatedShape";
+import AnimatedPieShape from "./AnimatedPieShape";
 import constants from "./constants";
 
 const { Surface, Group } = ART;
@@ -75,7 +75,7 @@ export default class ARTPie extends React.PureComponent<Props> {
     }
   }
 
-  getProps() {
+  _getProps() {
     return {
       data: this._data,
       arc: this._arc,
@@ -93,9 +93,9 @@ export default class ARTPie extends React.PureComponent<Props> {
         <Surface width={this._width} height={this._height}>
           <Group x={this._x} y={this._y}>
             {this._animate ? (
-              <PieAnimatedShape {...this.props} {...this.getProps()} />
+              <AnimatedPieShape {...this.props} {...this._getProps()} />
             ) : (
-              <PieShape {...this.getProps()} />
+              <PieShape {...this._getProps()} />
             )}
           </Group>
         </Surface>
