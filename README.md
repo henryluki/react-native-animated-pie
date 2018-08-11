@@ -50,22 +50,29 @@ export default class PieExample extends React.Component<any> {
 
 ## Props
 
-```javascript
-type Props = {
-  width?: number, // default window width
-  height?: number, // default width
-  outerRadius?: number, // default width / 2
-  innerRadius?: number, // default 0
-  x?: number, // coordinate of circle center, default width / 2
-  y?: number, // Coordinate of circle center, default width / 2
-  series: Array<number | string>, // data, required
-  colors?: Array<string>, // colors, default see constants
-  delay?: number, // animation delay, default 0ms
-  animate?: boolean, // animation or not, default true
-  duration?: number, // animation duration, default 1000ms
-  easing?: Function // easing func, default Easing.out(Easing.cubic)
-};
-```
+**`series`**: `Array<number | string>` dataset, `required`
+
+**`width`**?: `number` default `window width`
+
+**`height`**?: `number` default `width`
+
+**`outerRadius`**?: `number` default `width / 2`
+
+**`innerRadius`**?: `number` default `0`
+
+**`x`**?: `number` coordinate of pie center, default `width / 2`
+
+**`y`**?: `number` coordinate of pie center, default height / 2
+
+**`colors`**?: `Array<string>` colors, check `src/constants.js` for default colors
+
+**`delay`**?: `number` animation delay, default `0ms`
+
+**`animate`**?: `boolean` animation or not, default `true`
+
+**`duration`**?: `number` animation duration, default `1000ms`
+
+**`easing`**?: `Function` easing func, default `Easing.out(Easing.cubic)`
 
 ## License
 
